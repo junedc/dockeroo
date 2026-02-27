@@ -198,4 +198,3 @@ help:
 	@echo "  make meili-health      - Check Meilisearch health"
 	@echo "  make xdebug-check      - Verify Xdebug is loaded"
 	@echo "  make scout-import MODEL='App\\Models\\Product'"
-	@echo "docker compose up -d starline-api-app starline-api-nginx mysql redis meilisearch mailhog phpmyadmin admin-ui"

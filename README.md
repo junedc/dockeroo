@@ -21,11 +21,8 @@ MAIL_HOST=mailhog, MAIL_PORT=1025
 
 
 
-//if throwing predis error
+
 docker compose exec starline-api-app composer require predis/predis
 
-//check db connection
-docker compose exec starline-api-app php artisan migrate:status
 
-//run only backend and admin ui
-docker compose up -d starline-api-app starline-api-nginx mysql redis meilisearch mailhog phpmyadmin admin-ui
+docker compose exec starline-api-app php artisan migrate:status
